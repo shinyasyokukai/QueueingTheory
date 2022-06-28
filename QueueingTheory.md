@@ -14,3 +14,12 @@ https://qiita.com/ogata-k/items/f5b43f96dc97c28cf49d
 (顧客到着頻度の確率分布) / (サービス時間の確率分布) / (サーバ数) / (系の容量) / (サービスを受ける順番)  
 の形で記述する (ケンドールの記号)。  
 今回は「M/M/1/∞/先入れ先出し」の場合のみ扱う (M/M/1 と略記する)。
+
+```mermaid
+flowchart TD
+    Start --> Stop
+    subgraph on
+    Start --> |text|PointA
+    end
+    PointA --- Stop
+``` 
